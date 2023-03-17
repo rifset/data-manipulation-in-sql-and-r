@@ -8,7 +8,6 @@
 
 ## Table of Content
 
- [Data Manipulation in SQL or R? Let’s Do Both!](#data-manipulation-in-sql-or-r--let-s-do-both-)
   * [Introduction to Data Manipulation](#introduction-to-data-manipulation)
   * [Data Manipulation in R](#data-manipulation-in-r)
     + [Pipe operator](#pipe-operator)
