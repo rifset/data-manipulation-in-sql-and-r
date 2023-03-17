@@ -34,7 +34,7 @@ In this article, I will share my knowledge about data manipulation in R, its use
 
 ### Pipe operator
 
-Before going further, in the Tidyverse work environment, there is an exclusive operator called the pipe operator `%>%` which has a function to chain a sequence of operations or calculations. It simply passes the result of any previous function onto the function afterward. If you are using R Studio, you can instantly write a pipe operator using `CTRL` +`SHIFT` +`M` on your keyboard. Learn more about the pipe operator [here](https://www.datacamp.com/tutorial/pipe-r-tutorial).
+Before going further, in the Tidyverse work environment, there is an exclusive operator called the pipe operator `%>%` which has a function to chain a sequence of operations or calculations. It simply passes the result of any previous function onto the function afterward. If you are using R Studio, you can instantly write a pipe operator using `CTRL+SHIFT+M` on your keyboard. Learn more about the pipe operator [here](https://www.datacamp.com/tutorial/pipe-r-tutorial).
 
 ### Data for use cases
 
