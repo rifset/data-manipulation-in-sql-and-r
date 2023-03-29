@@ -21,10 +21,6 @@ library(randomForest)
 
 # data preparation --------------------------------------------------------
 
-setwd("D:\\DATARIF\\LinkedIn Post\\Ecommerce retention churn")
-
-load("churn-analysis.RData")
-
 trx_data <- fread("Sales Transaction.csv")
 trx_data[, Date := mdy(Date)]
 glimpse(trx_data)
@@ -142,7 +138,7 @@ trx_regional_stat %>%
   geom_text(aes(label = `% GMV`, color = Country), 
             fontface = "bold", vjust = -.5, show.legend = FALSE) +
   scale_y_continuous(
-    labels = label_dollar(scale = 1e-6, prefix = "£", suffix = "M", big.mark = ""),
+    labels = label_dollar(scale = 1e-6, prefix = "Â£", suffix = "M", big.mark = ""),
     expand = expansion(c(0, .1), 0)
   ) +
   labs(
@@ -231,5 +227,3 @@ tuning_model
 RF_model <- randomForest(Churn ~ ., data = train_data, mtry = 37, ntree = 500)
 predictRF <- predict(RF_model, newdata = test_data)
 confusionMatrix(predictRF, reference = test_data$Churn)
-
-save.image("churn-analysis.RData")
